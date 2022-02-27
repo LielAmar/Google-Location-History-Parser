@@ -17,7 +17,6 @@ def parse_single_file(in_file: str, out_file: str, append: bool=False):
         json_data = json.load(json_file)
 
     if json_data is None:
-        print(f'{in_file} is either an empty file or does\'t exist!')
         return
 
     # Checks if the out file already has the field names as a header
